@@ -1,0 +1,33 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": [
+    "src/**/*",
+    "src/**/*.vue",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+  ],
+  "exclude": ["src/**/__tests__/*", "node_modules"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "ESNext",
+    "target": "ESNext",
+    "lib": ["DOM", "ESNext"],
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "composite": true,
+    "allowJs": false,
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "types": ["node", "vite/client", "pinia-plugin-persist"]
+  }
+}
