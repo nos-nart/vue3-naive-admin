@@ -24,4 +24,4 @@ npm run dev --host
 - Typescript Error Translator
 
 
-### Notes
+> Gimme a start ⭐ if you found it helpful 🎉
